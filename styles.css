@@ -1,15 +1,95 @@
-html {
+/* all */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
     background-color: black;
-    color: gold;
+    color: #d4af37;
+    font-family: Georgia, serif;
 }
 
-.wrapper {
-    max-width: 1000px;
-    margin: 0 auto;
+/* bar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 60px;
+    border-bottom: 2px solid #d4af37;
 }
 
+/* icon */
+.icon img {
+    width: 70px;
+}
+
+/* links */
 .nav-bar {
-    list-style-type: none;
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: #d4af37;
+    padding: 10px 30px;
+    background-color: #5a4300;
+    border: 1px solid #d4af37;
+    font-size: 18px;
+}
+
+/* search */
+.search input {
+    width: 260px;
+    height: 35px;
+    background: linear-gradient(to right, #5a4300, #d4af37);
+    border: none;
+    outline: none;
+}
+
+/* img shit */
+.hero {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 50px 0px 0 60px;
+}
+
+/* logo */
+.hero-left {
+    max-width: 600px;
+}
+
+.hero-left img {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.hero-left p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+/* buy */
+.hero-left button {
+    background: transparent;
+    border: 2px solid #d4af37;
+    color: #d4af37;
+    padding: 12px 45px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.hero-left button:hover {
+    background: #d4af37;
+    color: black;
+}
+
+/* RIGHT SIDE IMAGE */
+.hero-right img {
+    width: 600px;
+    margin-right: 0;
 }
