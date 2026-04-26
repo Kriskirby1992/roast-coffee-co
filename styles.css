@@ -95,14 +95,17 @@ body {
 }
 
 /* foot */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 .site-footer {
     background-color: #311F01;
     color: #d4af37;
     padding: 20px 0;
     width: 100%;
-    position: relative;
-    left: 0;
-    bottom: 0;
+    margin-top: auto;
 }
 
 .footer-container {
@@ -180,4 +183,87 @@ body {
     font-size: 20px;
 }
 
+/* brew guide page */
 
+h2, h3 {
+    line-height: 50px;
+}
+
+.brewguidehero {
+    color: #d4af37;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 2px 2px black;
+    letter-spacing: 20px;
+    background-image: url("brewingguide.jpg");
+    background-size: cover;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 5px solid #d4af37;
+    border-bottom: 5px solid #d4af37;
+    background-attachment: fixed;
+}
+
+.container1 {
+    width: 90%;
+    margin: auto;
+    padding-top: 30px;
+    text-align: center;
+    color: black;
+    padding-bottom: 30px;
+    line-height: 25px;
+}
+
+.brew-options {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.brew-card {
+    background: #c9a227;
+    padding: 20px;
+    width: 200px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.brew-card:hover {
+    transform: scale(1.05);
+}
+
+.brew-card img {
+    width: 100%;
+}
+
+.dots {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    border: 2px solid #c9a227;
+}
+
+.active {
+    background: #c9a227;
+}
+
+.info-box {
+    background: #c9a227;
+    padding: 30px;
+    width: 60%;
+    margin: auto;
+    border-radius: 10px;
+    text-align: left;
+}
